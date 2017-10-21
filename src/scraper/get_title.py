@@ -1,5 +1,6 @@
 from get_next_line import get_next_line
 
+
 def get_title(text, ref_index, line_count):
     """
         Returns the first movie title string in text using 
