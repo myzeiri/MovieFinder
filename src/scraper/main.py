@@ -1,15 +1,7 @@
 """
-	Right now this pulls all the text from the 'Coming Soon' section
-	of Gateway and puts the movie titles + opening dates in a list. 
-
-	Ultimately this should be its own function.
-
-
 	TO-DO:
 		-Rewrite with REGEX
 		-Pull links for each movie 
-		-Create a movie class that contains info like the title, the url,
-		 the opening date, IMDB rating, genre
 		-Write output as a neatly formated HTML page 
 """
 from get_next_line import get_next_line
@@ -22,14 +14,6 @@ scraped_movies = scrape_movies()
 movie_list = create_movie_list(scraped_movies)
 
 
+for m in movie_list:
+	m.prettyPrint()
 
-print(movie_list[1].formatted_title)
-print(movie_list[1].rating)
-
-
-
-
-
-#print("Movies found:")
-#for i in range(len(scraped_movies)):
-#	print(scraped_movies[i])

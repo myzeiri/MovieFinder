@@ -15,11 +15,8 @@ class Movie:
 		formatted_title = formatted_title.replace(" ", "+")
 		return formatted_title.replace("NFF:", "")
 
-
-
-#"NFF: Dont Fuck in the Woods"
-
-#m = Movie("Title test (2000) in 50mm", "tomorrow")
-#print(m.original_title)
-#print(m.formatted_title)
-
+	def prettyPrint(self):
+		print(self.original_title)
+		print("\t" + self.opening_date)
+		print("\t" + self.genre)
+		print("\tRating = " + self.rating)

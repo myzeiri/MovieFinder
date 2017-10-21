@@ -1,10 +1,8 @@
 from get_next_line import get_next_line
 from scrape_text import get_page_text
 from get_title import get_title
-
 from add_movie_details import add_movie_details
 from movie import Movie
-
 
 url = 'http://gatewayfilmcenter.org/now-showing/coming-soon/'
 header = "Coming Soon:"
@@ -12,7 +10,6 @@ header = "Coming Soon:"
 #The reference string is the only consistent movie identifier
 reference = "Opening at GFC:"
 chunk_size = 7      #Number of lines from movie title to reference string
-
 
 
 def scrape_movies():
@@ -41,14 +38,13 @@ def scrape_movies():
 	return scraped_movies
 
 
-
 # Returns an array of movie objects.
 # Scraped movies is the list of [[title, date]] created by the scraper.
 def create_movie_list(scraped_movies):
 	movie_list = []
 	i = 0
 	while (i < len(scraped_movies)):
-		m = Movie(scraped_movies[i][0], scraped_movies[i][0])
+		m = Movie(scraped_movies[i][0], scraped_movies[i][1])
 		movie_list.append(m)
 		
 		i += 1
@@ -57,7 +53,3 @@ def create_movie_list(scraped_movies):
 	add_movie_details(movie_list)
 
 	return movie_list
-
-
-
-

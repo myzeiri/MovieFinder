@@ -14,17 +14,16 @@ def add_movie_details(movie_array):
 		title = movie.formatted_title
 
 		response = urllib.request.urlopen(base_url + title)
-		print(base_url + title)
 		try:
 			str_response = response.read().decode('utf-8')
 			movie_data = json.loads(str_response)
 		except:
-			print("Response error")
+			#print("Response error")
 			continue
 
 		try:
 			if (movie_data["error"] == "True"):
-				print("Error: movie not found online.")
+				#print("Error: movie not found online.")
 				print(movie_data)
 
 			else:
@@ -32,5 +31,6 @@ def add_movie_details(movie_array):
 				movie.rating = movie_data["data"]["rating"]
 
 		except:
-			print(title + " didn't load.")
+			#print(title + " didn't load.")
+			continue
 		
