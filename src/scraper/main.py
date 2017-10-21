@@ -30,7 +30,7 @@ print("Text downloaded.")
 
 #Opening from file for testing
 #with open ("soup_output.txt", "r") as myfile:
-#   text = myfile.read()
+    #text = myfile.read()
 
 
 movie_list = []     #[title, opening date]
