@@ -21,7 +21,10 @@ scraped_movies = scrape_movies()
 
 movie_list = create_movie_list(scraped_movies)
 
-print(movie_list)
+
+
+print(movie_list[1].formatted_title)
+print(movie_list[1].rating)
 
 
 

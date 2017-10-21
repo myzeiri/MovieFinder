@@ -12,10 +12,14 @@ class Movie:
 	def format_title(self):
 		formatted_title = re.sub(r"\(\d{4}\).*", "", self.original_title)
 		formatted_title = formatted_title.strip()
-		return formatted_title.replace(" ", "+")
+		formatted_title = formatted_title.replace(" ", "+")
+		return formatted_title.replace("NFF:", "")
 
 
-m = Movie("Title test (2000) in 50mm", "tomorrow")
-print(m.original_title)
-print(m.formatted_title)
+
+#"NFF: Dont Fuck in the Woods"
+
+#m = Movie("Title test (2000) in 50mm", "tomorrow")
+#print(m.original_title)
+#print(m.formatted_title)
 
