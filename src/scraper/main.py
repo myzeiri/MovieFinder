@@ -14,6 +14,10 @@ scraped_movies = scrape_movies()
 movie_list = create_movie_list(scraped_movies)
 
 
+file = open("output.txt", "w")
+
 for m in movie_list:
-	m.prettyPrint()
+
+
+file.close()
 
