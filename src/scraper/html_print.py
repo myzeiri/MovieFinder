@@ -1,6 +1,6 @@
 
 def html_print(movie_list):
-	file = open("output.txt", "w")
+	file = open("output.html", "w")
 	file.write("<html>")
 	file.write("<head>")
 	file.write("<title>Movies out soon</title>")

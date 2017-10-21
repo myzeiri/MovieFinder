@@ -13,10 +13,6 @@ from html_print import html_print
 print("Welcome to the Gateway Film Scraper.")
 print("Enter the genres you are interested in seperated by commas.")
 
-<<<<<<< HEAD
-movie_list = create_movie_list(scraped_movies)
-html_print(movie_list)
-=======
 genres_input = input()
 genres = genres_input.split(",")
 
@@ -33,6 +29,5 @@ for m in movie_list:
 			break
 
 
-for m in users_picks:
-	m.prettyPrint()
->>>>>>> 0db37a59443738043742c9b5c703fb0f930a6b42
+
+html_print(users_picks)
