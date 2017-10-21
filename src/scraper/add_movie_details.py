@@ -15,5 +15,3 @@ def add_movie_details(movie_array):
 		#Use map to populate movie object
 		movie.genre = movie_data["data"]["genre"]
 		movie.rating = movie_data["data"]["rating"]
-
-	return movie_array
