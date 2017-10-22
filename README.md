@@ -2,7 +2,7 @@
 
 Authors: Edmond Shek and Martin Yzeiri
 
-Goal: Filter the upcoming movies at [Gateway](gatewayfilmcenter.org) by IMDB score and genre,
+Goal: Filter the upcoming movies at [Gateway](https://gatewayfilmcenter.org) by IMDB score and genre,
 then present those movies in an HTML doc.
 
 Special thanks to [theapache64](https://github.com/theapache64/movie_db) for his free movie database API.  
