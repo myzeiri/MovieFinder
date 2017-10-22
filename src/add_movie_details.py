@@ -5,7 +5,10 @@ from movie import Movie
 base_url = "http://theapache64.xyz:8080/movie_db/search?keyword="
 
 def add_movie_details(movie_array):
-    #need while loop to create a movie using the title array and api
+    """ Uses apache64's movie database API to find the genre and
+        IMDB rating for each movie in movie_array
+    """
+
     for movie in movie_array:
         title = movie.formatted_title
 
@@ -18,7 +21,6 @@ def add_movie_details(movie_array):
 
         try:
             if (movie_data["error"] == "True"):
-                #print("Error: movie not found online.")
                 print(movie_data)
 
             else:

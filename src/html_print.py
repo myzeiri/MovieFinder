@@ -1,4 +1,6 @@
 def html_print(movie_list):
+    """ Creates an HTML file printing the information for each movie in movie_list"""
+    
     file = open("../html/output.html", "w")
     file.write("<html>")
     file.write("<head>")

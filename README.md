@@ -1,11 +1,16 @@
-HackOH/IO 2017
+##Movie Finder (HackOH/IO 2017)
 
 Authors: Edmond Shek and Martin Yzeiri
 
-Goal: Filter the upcoming movies at Gateway by IMDB score and genre,
-then present those movies in an email.
+Goal: Filter the upcoming movies at [Gateway](gatewayfilmcenter.org) by IMDB score and genre,
+then present those movies in an HTML doc.
 
-Components:
-scraper:
-	Downloads the upcoming movie titles and their dates.
-	
+Special thanks to [theapache64](https://github.com/theapache64/movie_db) for his free movie database API.  
+
+**Running the program**
+
+You will need to python3 and Beautiful Soup installed. 
+
+[How to install Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)  
+
+Then, navigate to src and run `python3 main.py` and follow on the onscreen instructions.

@@ -1,6 +1,8 @@
 import re
 class Movie: 
-    #This is the movie class which will contain title, opening date, genre, rating
+    """ This is the movie class which contains title, opening date, genre, rating
+        for each scraped movie.
+    """
 
     def __init__(self, original_title, opening_date):
         self.original_title = original_title

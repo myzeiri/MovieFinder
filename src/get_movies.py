@@ -31,8 +31,7 @@ def get_next_line(string):
 
 
 def get_title(text, ref_index, line_count):
-    """
-        Returns the first movie title string in text using 
+    """ Returns the first movie title string in text using 
         reference as a target. 
 
         The start of the movie title is line_count number of lines ahead of
@@ -55,6 +54,8 @@ def get_title(text, ref_index, line_count):
 
 
 def scrape_movies():
+    """ Returns an array containing [title, opening date] for each film. """
+
     print("Getting page text...")
     text = get_page_text(url, header)
     print("Text downloaded.")
@@ -76,9 +77,12 @@ def scrape_movies():
     return scraped_movies
 
 
-# Returns an array of movie objects.
-# Scraped movies is the list of [[title, date]] created by the scraper.
+
 def create_movie_list(scraped_movies):
+    """ Returns an array of movie objects.
+        Scraped movies is the list of [[title, date]] created by the scraper. 
+    """
+
     movie_list = []
     i = 0
     while (i < len(scraped_movies)):
