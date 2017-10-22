@@ -1,4 +1,4 @@
-##Movie Finder (HackOH/IO 2017)
+## Movie Finder (HackOH/IO 2017)
 
 Authors: Edmond Shek and Martin Yzeiri
 
@@ -13,4 +13,4 @@ You will need to python3 and Beautiful Soup installed.
 
 [How to install Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)  
 
-Then, navigate to src and run `python3 main.py` and follow on the onscreen instructions.
+Then, navigate to src and run `python3 main.py` and follow on the on-screen instructions.
