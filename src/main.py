@@ -9,7 +9,7 @@ print("Getting movie information...")
 movie_list = create_movie_list(scraped_movies)
 
 users_picks = []
-
+#testing
 # Get user's commands
 choice = 0
 while choice != 4:
